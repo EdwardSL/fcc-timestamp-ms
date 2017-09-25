@@ -15,7 +15,7 @@ app.get('/', function(req, res) {
 //    })
 })
 app.get('/:time', function(req, res){
-    if(/^\d{8,}$/.test(req.params.time)) {
+    if(/^\d{1,}$/.test(req.params.time)) {
         var time = new Date(req.params.time * 1000);
     } else {
         var time = new Date(req.params.time);
