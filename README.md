@@ -22,14 +22,8 @@
 
 ### Example Output
 
-    { 
-        "unix": 1450137600, 
-        "natural": "December 15, 2015" 
-    }
+    { "unix": 1450137600, "natural": "December 15, 2015" }
 
 或
 
-    { 
-        "unix": null, 
-        "natural": null 
-    }
+    { "unix": null, "natural": null }
