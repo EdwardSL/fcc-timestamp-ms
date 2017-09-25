@@ -1,13 +1,13 @@
 {
   "name": "timestamp-ms",
   "version": "0.0.0",
-  "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
+  "description": "User can pass a unix timestamp or a natural language date as a parameter, and this app will returns both the Unix timestamp and the natural language form of that date.",
   "main": "server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EdwardSL/fcc-timestamp-ms.git"
   },
-  "author": "Mostafa Eweda <mo.eweda@gmail.com>",
+  "author": "Li Yan <eszxtfcyhuhb@gmail.com>",
   "dependencies": {
     "async": "~2.5.0",
     "bootstrap": "^3.3.7",
