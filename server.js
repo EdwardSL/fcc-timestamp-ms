@@ -4,11 +4,15 @@ var path = require("path");
 var strftime = require('strftime')
 var app = express();
 
+app.use(require('stylus').middleware('/public/css/style.css'));
+app.use(express.static(path.join(__dirname + '/public')));
+
 app.get('/', function(req, res) {
-    fs.readFile(__dirname + '/public/index.html', 'utf8', function(err, data) {
-        if(err) return console.log(err);
-        return res.send(data);
-    })
+    res.render("index.html");
+//    fs.readFile(__dirname + '/public/index.html', 'utf8', function(err, data) {
+//        if(err) return console.log(err);
+//        return res.send(data);
+//    })
 })
 app.get('/:time', function(req, res){
     if(/^\d{8,}$/.test(req.params.time)) {
