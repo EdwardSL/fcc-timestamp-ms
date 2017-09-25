@@ -1,22 +1,37 @@
+# Timestamp Microservice
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+***
 
+这个repository是用来完成freecodecamp的一个叫做“Timestamp Microservice”的api project，更多细节请访问：
 
-Welcome to your Node.js project on Cloud9 IDE!
+[https://www.freecodecamp.cn/challenges/timestamp-microservice](https://www.freecodecamp.cn/challenges/timestamp-microservice)
 
-This chat example showcases how to use `socket.io` with a static `express` server.
+## User Stories
 
-## Running the server
+1. 把一个字符串作为参数，判断该字符串是不是一个 Unix 时间，或者一个公历日期（例如：January 1, 2016）；
 
-1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.
+2. 如果是，那么它同时返回 Unix 时间戳和公历日期；
 
-2) Alternatively you can launch the app from the Terminal:
+3. 如果不是，那么它返回 null。
 
-    $ node server.js
+## Example Input
 
-Once the server is running, open the project in the shape of 'https://projectname-username.c9users.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
+    https://freecodecamp-timestamp-microservice-imukit007.c9users.io/December%2015,%202015
+    
+Or
+
+    https://freecodecamp-timestamp-microservice-imukit007.c9users.io/1450137600
+
+## Example Output
+
+    { 
+        "unix": 1450137600, 
+        "natural": "December 15, 2015" 
+    }
+
+Or
+
+    { 
+        "unix": null, 
+        "natural": null 
+    }
