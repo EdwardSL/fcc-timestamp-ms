@@ -14,11 +14,11 @@
 
 ### Example Input
 
-    https://freecodecamp-timestamp-microservice-imukit007.c9users.io/December%2015,%202015
+    https://fcc-liy-timestamp-ms.herokuapp.com/December%2015,%202015
     
 或
 
-    https://freecodecamp-timestamp-microservice-imukit007.c9users.io/1450137600
+    https://fcc-liy-timestamp-ms.herokuapp.com/1450137600
 
 ### Example Output
 
